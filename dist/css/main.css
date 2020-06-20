@@ -178,7 +178,11 @@ h1 {
 }
 
 .page-menu a {
-    border: 1px solid var(--light-gray);
-    border-radius: 5px;
+    border-top: 3px solid var(--accent-color);
     padding: 0.5rem 0.7rem;
+    margin: 0 0.2rem;
+}
+
+.page-menu a:first-of-type {
+    margin-left: 0;
 }
