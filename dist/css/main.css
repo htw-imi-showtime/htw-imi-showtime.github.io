@@ -133,9 +133,10 @@ figure img {
 /*********/
 /* Video */
 /*********/
-video {
+video, iframe {
     display: block;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 
