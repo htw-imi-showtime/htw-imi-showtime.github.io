@@ -5,8 +5,11 @@
 :root {
     /* Colors */
     --accent-color: #76B900;
-    --light-gray: #dddddd;
-    --dark-gray: #666666;
+    --white: #fff;
+    --light-gray: #ddd;
+    --gray: #666;
+    --dark-gray: #333;
+    --black: #000;
 
     /* Sizes */
     --inset: 1rem;
@@ -82,7 +85,7 @@ footer section:last-child a:last-child {
     max-width: 400px;
     border: 1px solid var(--light-gray);
     border-radius: 5px;
-    color: #000;
+    color: inherit;
     margin: 1.5rem 1rem;
 }
 
@@ -91,7 +94,7 @@ footer section:last-child a:last-child {
     max-height: 300px;
     object-fit: cover;
     margin-bottom: 1rem;
-    border-radius: 5px 5px 0 0;
+    border-radius: 4px 4px 0 0;
 }
 
 .card h2 {
@@ -102,7 +105,7 @@ footer section:last-child a:last-child {
 .card span {
     float: right;
     background-color: var(--accent-color);
-    color: #fff;
+    color: var(--white);
     margin: 0 1rem;
     padding: 0.2rem 0.4rem;
     border-radius: 5px;
@@ -120,7 +123,7 @@ figure {
     display: block;
     margin-left: 0;
     margin-right: 0;
-    color: var(--dark-gray);
+    color: var(--gray);
     font-style: italic;
     text-align: center;
 }
@@ -140,11 +143,11 @@ video, iframe {
 }
 
 
-/************************/
-/* Source and Demo Link */
-/************************/
+/*****************************/
+/* Source, Demo and Web Link */
+/*****************************/
 .link {
-    color: var(--dark-gray);
+    color: var(--gray);
     margin: 0.5rem 0 0 1.5rem;
     float: right;
 }
@@ -185,4 +188,15 @@ h1 {
 
 .page-menu li:first-of-type a {
     margin-left: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-gray);
+        color: var(--white);
+    }
+
+    .link {
+        color: var(--light-gray);
+    }
 }
