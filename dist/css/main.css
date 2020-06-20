@@ -183,6 +183,6 @@ h1 {
     margin: 0 0.2rem;
 }
 
-.page-menu a:first-of-type {
+.page-menu li:first-of-type a {
     margin-left: 0;
 }
