@@ -164,3 +164,21 @@ video, iframe {
 h1 {
     display: inline-block;
 }
+
+/*************/
+/* Page menu */
+/*************/
+.page-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.page-menu li {
+    display: inline-block;
+}
+
+.page-menu a {
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+}
