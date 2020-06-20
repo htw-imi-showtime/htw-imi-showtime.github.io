@@ -201,7 +201,7 @@ h1 {
         color: var(--white);
     }
 
-    .link {
+    .links a {
         color: var(--light-gray);
     }
 }
