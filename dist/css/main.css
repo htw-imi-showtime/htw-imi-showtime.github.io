@@ -19,6 +19,11 @@ body {
     padding: 0 2rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
 
 /**********/
 /* Header */
@@ -32,7 +37,6 @@ header {
 }
 
 header a {
-    text-decoration: none;
     color: var(--accent-color);
 }
 
@@ -57,7 +61,6 @@ footer {
 
 footer a {
     color: inherit;
-    text-decoration: none;
 }
 
 footer section:last-child a:last-child {
@@ -79,7 +82,6 @@ footer section:last-child a:last-child {
     max-width: 400px;
     border: 1px solid var(--light-gray);
     border-radius: 5px;
-    text-decoration: none;
     color: #000;
     margin: 1.5rem 1rem;
 }
@@ -125,4 +127,39 @@ figure {
 
 figure img {
     max-width: 100%;
+}
+
+
+/*********/
+/* Video */
+/*********/
+video {
+    display: block;
+    max-width: 100%;
+}
+
+
+/************************/
+/* Source and Demo Link */
+/************************/
+.link {
+    color: var(--dark-gray);
+    margin: 0.5rem 0 0 1.5rem;
+    float: right;
+}
+
+.link svg {
+    max-height: 2.3rem;
+    max-width: 3.5rem;
+    fill: var(--accent-color);
+    display: block;
+    margin: 0.5rem auto;
+}
+
+
+/****************/
+/* Project page */
+/****************/
+h1 {
+    display: inline-block;
 }
