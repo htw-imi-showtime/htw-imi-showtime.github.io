@@ -37,10 +37,74 @@ header {
     font-size: 1.5rem;
     padding: var(--inset);
     border-bottom: 1px solid var(--light-gray);
+    color: var(--accent-color);
+}
+
+header h1 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+header nav {
+    position: relative;
 }
 
 header a {
-    color: var(--accent-color);
+    color: inherit;
+}
+
+header span {
+    padding: 0 0 0 6rem;
+    cursor: pointer;
+}
+
+header ul {
+    display: none;
+    margin: 0.8rem 0;
+    padding: 0;
+    list-style: none;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    position: absolute;
+    right: -0.5rem;
+    text-align: right;
+    filter: drop-shadow(0 0 10px var(--light-gray));
+}
+
+header ul::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border-left: 1px solid var(--light-gray);
+    border-top: 1px solid var(--light-gray);
+    position: absolute;
+    top: 0;
+    right: 10%;
+    transform: rotate(45deg) translateY(-70%);
+    z-index: 10;
+}
+
+header .show {
+    display: block;
+}
+
+header li {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+header li:first-of-type {
+    padding-top: 1rem;
+}
+
+header li:last-of-type {
+    padding-bottom: 1rem;
+    border-bottom: none;
 }
 
 
@@ -204,6 +268,14 @@ h1 {
     .links a {
         color: var(--light-gray);
     }
+
+    header ul, header ul::after {
+        background-color: var(--dark-gray);
+    }
+
+    header ul {
+        filter: drop-shadow(0 0 10px var(--black));
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -226,5 +298,28 @@ h1 {
     .links svg {
         max-height: 1.5rem;
         max-width: 2rem;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin-bottom: 1rem;
+    }
+
+    header span {
+        padding: 0;
+    }
+
+    header ul {
+        text-align: left;
+        left: 0;
+        right: inherit;
+    }
+
+    header ul::after {
+        left: 10%;
+        right: inherit;
     }
 }
