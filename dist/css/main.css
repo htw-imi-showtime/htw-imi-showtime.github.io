@@ -247,6 +247,7 @@ h1 {
 
 .page-menu li {
     display: inline-block;
+    margin: 0.7rem 0;
 }
 
 .page-menu a {
@@ -259,6 +260,10 @@ h1 {
     margin-left: 0;
 }
 
+
+/*****************/
+/* Media Queries */
+/*****************/
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--dark-gray);
@@ -321,5 +326,16 @@ h1 {
     header ul::after {
         left: 10%;
         right: inherit;
+    }
+
+    .page-menu li {
+        display: block;
+        margin: 1.4rem 0;
+    }
+
+    .page-menu a {
+        margin: 0;
+        border-top: none;
+        border-left: 3px solid var(--accent-color);
     }
 }
