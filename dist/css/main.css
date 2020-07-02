@@ -27,6 +27,11 @@ a {
     color: var(--accent-color);
 }
 
+h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
+}
+
 
 /**********/
 /* Header */
@@ -207,6 +212,42 @@ video, iframe {
 }
 
 
+/*********/
+/* Table */
+/*********/
+.table-container {
+    overflow-x: scroll;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+tr:nth-child(even) {
+    background-color: var(--light-gray);
+}
+
+th, td {
+    padding: 0.7rem 1rem;
+    width: 22.5%;
+}
+
+th:first-child, td:first-child {
+    width: 10%;
+}
+
+th > a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+
 /*****************************/
 /* Source, Demo and Web Link */
 /*****************************/
@@ -280,6 +321,10 @@ h1 {
 
     header ul {
         filter: drop-shadow(0 0 10px var(--black));
+    }
+
+    tr:nth-child(even) {
+        background-color: var(--gray);
     }
 }
 
