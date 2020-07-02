@@ -222,6 +222,7 @@ video, iframe {
 table {
     border-spacing: 0;
     border-collapse: collapse;
+    min-width: 100%;
 }
 
 thead {
@@ -229,8 +230,8 @@ thead {
     color: var(--white);
 }
 
-tr:nth-child(even) {
-    background-color: var(--light-gray);
+tr {
+    border-bottom: 1px solid var(--light-gray);
 }
 
 th, td {
@@ -240,6 +241,10 @@ th, td {
 
 th:first-child, td:first-child {
     width: 10%;
+}
+
+td:first-child {
+    background-color: var(--light-gray);
 }
 
 th > a {
@@ -323,7 +328,11 @@ h1 {
         filter: drop-shadow(0 0 10px var(--black));
     }
 
-    tr:nth-child(even) {
+    tr {
+        border-bottom: 1px solid var(--gray);
+    }
+
+    td:first-child {
         background-color: var(--gray);
     }
 }
