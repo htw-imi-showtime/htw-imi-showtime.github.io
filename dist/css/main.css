@@ -341,6 +341,10 @@ h1 {
     td:first-child {
         background-color: var(--gray);
     }
+
+    svg#logo {
+        fill: var(--white);
+    }
 }
 
 @media screen and (max-width: 480px) {
