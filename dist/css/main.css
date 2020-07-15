@@ -289,6 +289,7 @@ h1 {
     display: inline-block;
 }
 
+
 /*************/
 /* Page menu */
 /*************/
@@ -310,6 +311,15 @@ h1 {
 
 .page-menu li:first-of-type a {
     margin-left: 0;
+}
+
+
+/***********/
+/* Infobox */
+/***********/
+.infobox {
+    border: 3px solid var(--accent-color);
+    padding: 1rem;
 }
 
 
