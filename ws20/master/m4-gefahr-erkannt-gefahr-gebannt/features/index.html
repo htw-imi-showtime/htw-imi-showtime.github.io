@@ -1,4 +1,6 @@
-<!doctype html><html lang=en dir=ltr><meta name=viewport content="width=device-width,initial-scale=1"><meta charset=utf-8><link rel=stylesheet href=https://htw-imi-showtime.github.io/style.css><script src=/js/title-animate.js></script><script src=/js/semester-select.js></script><script src=/js/secret.js></script><title>IMI Showtime - HTW Berlin</title><body><nav class="background master"><a href=https://htw-imi-showtime.github.io/ class=animate-trigger><strong>IMI<span class=light>×</span><span class=animate>ST</span></strong> <span class=light>2023</span></a>
+<!doctype html><html lang=en dir=ltr><meta name=viewport content="width=device-width,initial-scale=1"><meta charset=utf-8><link rel=stylesheet href=https://htw-imi-showtime.github.io/style.css><script src=/js/title-animate.js></script>
+<script src=/js/semester-select.js></script>
+<script src=/js/secret.js></script><title>IMI Showtime - HTW Berlin</title><body><nav class="background master"><a href=https://htw-imi-showtime.github.io/ class=animate-trigger><strong>IMI<span class=light>×</span><span class=animate>ST</span></strong> <span class=light>2023</span></a>
 <input type=checkbox id=menu-btn>
 <label for=menu-btn><span></span></label><ul><li><a href=/projects>Projects</a></li><li><a href=/schedule>Schedule</a></li><li><a href=/dates>Dates</a></li><li><a href=/ws22>Archive</a></li><li><a href=/contact>Contact</a></li></ul></nav><div class="background master"><header class=project-header><h1><span class=type>M4 Master</span>
 Gefahr erkannt, Gefahr gebannt
@@ -6,10 +8,124 @@ Gefahr erkannt, Gefahr gebannt
 <label for=project-menu-button><span></span></label><div class=dropdown-menu><ul><li><a href=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/tech-stack/>Tech Stack</a></li><li><a href=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/future/>Future</a></li></ul></div></div><main class=project><section><h3>Training-Related Task</h3><div class=spacer></div><div class=content><p>To provide an ingame objective which represents an everyday work task to the trainees, their instructors were included in the development process.</p><p>When entering the virtual workshop the players receive the task to craft a dice. This requires interaction with cutting machines like the hand lever or the guillotine shears as well as the bench drill to perforate the metal workpieces. To set the final product together, a glue gun needs to be used.</p><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/task.png alt="dice task procedure visualized"><figcaption>Visualization of dice task procedure</figcaption></figure></div></section><section><h3>Interactable realistic machines:</h3><div class=spacer></div><div class=content>In order to allow the trainees to transfer their prior learning experiences to the virtual world and vice versa, the machines were modeled after their real life counterparts.
 One of the biggest challenges hereby was the adaption of the handling to the VR medium.</div></section><section><h3>1. Bench Drill</h3><div class=spacer></div><div class=content>The bench drill is the most complex of all the modeled machines.
 Users must follow the correct sequence of operational steps to stay safe or risk serious injury.
-Interactions include adjustment of drill bits, pulling down the operating handle, toggling the work light and turning the machine on and off.</div></section><section class=gallery><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/bench_drill_avt.JPG alt="avt teltow bench drill"><figcaption>1. avt teltow - bench drill - reference</figcaption></figure><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/bench_drill_blender.png alt="modeled bench drill in blender"><figcaption>2. our modeled bench drill in blender</figcaption></figure><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/bench_drill.gif alt="modeled bench drill in unity"><figcaption>3. our interactive bench drill in unity</figcaption></figure></section><section><h3>2. Hand Lever Shear</h3><div class=spacer></div><div class=content>The hand lever shear is used to cut smaller pieces and strips of metal.
+Interactions include adjustment of drill bits, pulling down the operating handle, toggling the work light and turning the machine on and off.</div></section><section class=gallery><pre><code>&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/bench_drill_avt.JPG&quot; alt=&quot;avt teltow bench drill&quot;&gt;
+
+&lt;figcaption&gt;1. avt teltow - bench drill - reference&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+    
+        
+    
+    
+    
+
+
+&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/bench_drill_blender.png&quot; alt=&quot;modeled bench drill in blender&quot;&gt;
+
+&lt;figcaption&gt;2. our modeled bench drill in blender&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+    
+        
+    
+    
+    
+
+
+&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/bench_drill.gif&quot; alt=&quot;modeled bench drill in unity&quot;&gt;
+
+&lt;figcaption&gt;3. our interactive bench drill in unity&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+</code></pre></section><section><h3>2. Hand Lever Shear</h3><div class=spacer></div><div class=content>The hand lever shear is used to cut smaller pieces and strips of metal.
 This tool provides a higher level of accuracy and a more convenient operation than the guillotine shear.
-To operate it, users must unhinge the safety hook and pull the lever down, thereby executing the cutting movement of the blade. Not only can they slice their fingers off but also knock themselves out when hit by the unsecured lever.</div></section><section class=gallery><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/hand_lever_shear_bfw.png alt="hand lever shear"><figcaption>1. bfw - hand lever shear - reference</figcaption></figure><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/hand_lever_shear_blender.png alt="modeled hand lever shear in blender"><figcaption>2. our modeled hand lever shear in blender</figcaption></figure><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/hand_lever_shears.gif alt="modeled hand lever shear in unity"><figcaption>3. our interactive hand lever shear in unity</figcaption></figure></section><section><h3>3. Guillotine Shear</h3><div class=spacer></div><div class=content>The guillotine shear is used to cut larger sheets of metal down to size. To do so, a sheet is layed on the operating surface and positioned under the blade.
-The shear needs to be turned on via a switch on the left side. On button press, the blade is pushed down onto the workpiece, separating excess material.</div></section><section class=gallery><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/guillotine_shear_avt.JPG alt="guillotine shear"><figcaption>1. avt teltow - guillotine shear - Reference</figcaption></figure><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/guillotine_shear_blender.png alt="guillotine shear"><figcaption>2. our modeled guillotine shear in blender</figcaption></figure><figure><img src=/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/guillotine_shears.gif alt="guillotine shear"><figcaption>3. our interactive guillotine shear in unity</figcaption></figure></section><section><h3>Injury Simulation</h3><div class=spacer></div><div class=content><p>One of the core concepts of our application is to give an impression of how badly one can hurt themselves as a consequence of improper machine operation.
+To operate it, users must unhinge the safety hook and pull the lever down, thereby executing the cutting movement of the blade. Not only can they slice their fingers off but also knock themselves out when hit by the unsecured lever.</div></section><section class=gallery><pre><code>&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/hand_lever_shear_bfw.png&quot; alt=&quot;hand lever shear&quot;&gt;
+
+&lt;figcaption&gt;1. bfw - hand lever shear - reference&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+    
+        
+    
+    
+    
+
+
+&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/hand_lever_shear_blender.png&quot; alt=&quot;modeled hand lever shear in blender&quot;&gt;
+
+&lt;figcaption&gt;2. our modeled hand lever shear in blender&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+    
+        
+    
+    
+    
+
+
+&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/hand_lever_shears.gif&quot; alt=&quot;modeled hand lever shear in unity&quot;&gt;
+
+&lt;figcaption&gt;3. our interactive hand lever shear in unity&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+</code></pre></section><section><h3>3. Guillotine Shear</h3><div class=spacer></div><div class=content>The guillotine shear is used to cut larger sheets of metal down to size. To do so, a sheet is layed on the operating surface and positioned under the blade.
+The shear needs to be turned on via a switch on the left side. On button press, the blade is pushed down onto the workpiece, separating excess material.</div></section><section class=gallery><pre><code>&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/guillotine_shear_avt.JPG&quot; alt=&quot;guillotine shear&quot;&gt;
+
+&lt;figcaption&gt;1. avt teltow - guillotine shear - Reference&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+    
+        
+    
+    
+    
+
+
+&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/guillotine_shear_blender.png&quot; alt=&quot;guillotine shear&quot;&gt;
+
+&lt;figcaption&gt;2. our modeled guillotine shear in blender&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+    
+        
+    
+    
+    
+
+
+&lt;figure&gt;
+    &lt;img src=&quot;/ws20/master/m4-gefahr-erkannt-gefahr-gebannt/guillotine_shears.gif&quot; alt=&quot;guillotine shear&quot;&gt;
+
+&lt;figcaption&gt;3. our interactive guillotine shear in unity&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+</code></pre></section><section><h3>Injury Simulation</h3><div class=spacer></div><div class=content><p>One of the core concepts of our application is to give an impression of how badly one can hurt themselves as a consequence of improper machine operation.
 At the same time we don&rsquo;t intend on traumatizing trainees or scaring them away from machines they need for their work.</p><p>To balance these two requirements out, we explicitly asked for feedback of the implemented injury visualization. While the trainers stressed that showing what is real is important -
 trainees should be aware of the severity of possible injuries -, we received mixed opinions on the graphic detail shown from their protegees. Some thought it could be more detailed (&ldquo;gory&rdquo;), while others thought it might be overwhelming for sensitive users.</p><p><strong>Blood</strong> - The <a href=https://assetstore.unity.com/packages/vfx/particles/volumetric-blood-fluids-173863>Volumetric Blood Fluids</a> asset pack and custom settings for it were used to try to realistically portray the blood behaviour of cutting/drilling wounds.</p><p><strong>Clipboard Feedback</strong> - To achieve a better understanding of what actions led to an injury inducing mistake, the players are presented with a clipboard which shows what was done wrong and how proper behaviour looks in order to prevent similar mistakes in the future.</p></div></section></main><footer><section><a href=https://htw-imi-showtime.github.io/ class=animate-trigger><strong>IMI<span class=light>⨯</span><span class=animate>ST</span></strong>
 2023</a><ul><li><a href=/contact>Contact</a></li><li><a href=/privacy-policy>Privacy Policy</a></li><li><a href=/imprint>Imprint</a></li></ul></section><img src=/img/htw-logo.png alt="HTW Logo"></footer></body></html>
