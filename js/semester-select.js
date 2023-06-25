@@ -3,5 +3,5 @@ window.addEventListener("DOMContentLoaded", () =>
 );
 
 function changeSemester(event) {
-    window.location.href = `/${event.target.value}`;
+    window.location.href = `${event.target.value}`;
 }
