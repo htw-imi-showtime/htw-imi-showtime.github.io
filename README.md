@@ -16,6 +16,4 @@ See the [README.md](https://github.com/htw-imi-showtime/showtime-website/blob/ma
 
 # If you are looking for the "real" [Showtime Website](https://showtime.f4.htw-berlin.de/):
 
-[https://showtime.f4.htw-berlin.de/](https://showtime.f4.htw-berlin.de/
-
-)
+[https://showtime.f4.htw-berlin.de/](https://showtime.f4.htw-berlin.de/)
